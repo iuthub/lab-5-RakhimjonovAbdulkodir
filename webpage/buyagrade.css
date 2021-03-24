@@ -20,13 +20,13 @@ h1, h2 {
     text-align: center;
 }
 
-input[type="text"]{
-    background-color: lightgray;
-}
-select{
+input[type="text"] {
     background-color: lightgray;
 }
 
+select {
+    background-color: lightgray;
+}
 
 input[type="submit"] {
     font-size: 2em;

@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<form action="http://httpbin.org/post">
+<form action="data.php" method="post">
     <h1>Buy Your Way to a Better Education!</h1>
 
     <p>
@@ -27,22 +27,22 @@
         <dd>
             <select name="section">
                 <option selected disabled>(Select a section)</option>
-                <option value="ma">MA</option>
-                <option value="mb">MB</option>
-                <option value="mc">MC</option>
-                <option value="md">MD</option>
-                <option value="mf">MF</option>
-                <option value="mg">MG</option>
-                <option value="mh">MH</option>
+                <option value="MA">MA</option>
+                <option value="MB">MB</option>
+                <option value="MC">MC</option>
+                <option value="MD">MD</option>
+                <option value="MF">MF</option>
+                <option value="MG">MG</option>
+                <option value="MH">MH</option>
             </select>
         </dd>
 
         <dt>Credit Card</dt>
         <dd>
-            <input type="text" name="CreditCard">
+            <input type="text" name="Card">
             <br>
-            <input type="radio" name="CreditCard" value="Visa">Visa
-            <input type="radio" name="CreditCard" value="MasterCard">MasterCard
+            <input type="radio" name="CreditCard" value="(visa)">Visa
+            <input type="radio" name="CreditCard" value="(masterCard)">MasterCard
         </dd>
 
 
