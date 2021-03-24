@@ -20,7 +20,17 @@ h1, h2 {
     text-align: center;
 }
 
+input[type="text"]{
+    background-color: lightgray;
+}
+select{
+    background-color: lightgray;
+}
+
+
 input[type="submit"] {
     font-size: 2em;
     width: 100%;
+    background-color: lightgray;
+    border: none;
 }
