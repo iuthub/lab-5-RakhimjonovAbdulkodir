@@ -9,7 +9,6 @@
     <link href="./buyagrade.css" type="text/css" rel="stylesheet">
 </head>
 
-<body>
 
 <?php if ($_SERVER["REQUEST_METHOD"] != 'POST') { ?>
     <h2>This page only accepts POST requests</h2>
@@ -18,25 +17,45 @@
     <h1>Thanks, sucker!</h1>
     <p>Your information has been recorder.</p>
 
+    <?php
+        $username = $_REQUEST["username"];
+        $section = $_REQUEST["section"];
+        $card = $_REQUEST["Card"];
+        $CreditCard = $_REQUEST["CreditCard"];
+    ?>
+
     <dl>
         <dt>Name</dt>
         <dd>
-            <?= $_REQUEST["username"] ?>
+            <?= $username ?>
         </dd>
 
         <dt>Section</dt>
         <dd>
-            <?= $_REQUEST["section"] ?>
+            <?= $section ?>
         </dd>
 
         <dt>Credit Card</dt>
         <dd>
-            <?= $_REQUEST["Card"] ?>
-            <?= $_REQUEST["CreditCard"] ?>
+            <?= $card ?>
+          (  <?= $CreditCard ?> )
         </dd>
-
     </dl>
 
+    <p>Here are all the suckers who have submitted here:</p>
+
+    <pre><?php
+
+        $suckers = fopen('suckers.txt','a+');
+        fwrite($suckers, "{$username};{$section};{$card}; {$CreditCard}; \n");
+        fclose($suckers);
+        $suckers = fopen('suckers.txt','r');
+        while (!feof($suckers)) {
+            $line = fgetc($suckers);
+            echo $line;
+        }
+            fclose($suckers);
+    ?></pre>
 <?php } ?>
 
 
