@@ -1,5 +1,5 @@
-Abdulqodir;MA;8600980533647596; visa;
-Ryan;MC;1234123412341234; visa; 
-Kelvin;MC;8600741596320000; masterCard; 
-Tom;MF;9800635144778002; visa; 
-Jack;MH;78563221548963; visa; 
+Ryan;MA;1234123412341234;visa
+Kevin W;MF;5963109385987345;mastercard
+Kimberly Todd;MC;7328904328904902;mastercard
+Abdulqodir;MF;8600980533647596; visa; 
+

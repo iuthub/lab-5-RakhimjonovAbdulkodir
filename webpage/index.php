@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<form action="data.php" method="post">
+<form action="sucker.php" method="post">
     <h1>Buy Your Way to a Better Education!</h1>
 
     <p>
@@ -41,8 +41,8 @@
         <dd>
             <input type="text" name="Card">
             <br>
-            <input type="radio" name="CreditCard" value="(visa)">Visa
-            <input type="radio" name="CreditCard" value="(masterCard)">MasterCard
+            <input type="radio" name="CreditCard" value="visa">Visa
+            <input type="radio" name="CreditCard" value="masterCard">MasterCard
         </dd>
 
 
